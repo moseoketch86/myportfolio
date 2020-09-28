@@ -1,0 +1,551 @@
+body{
+    margin:0px;
+    padding: 0px;
+    background-color: #161616;
+}
+ul{
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+#main{
+    width: 100%;
+    height:150vh;
+    box-sizing: border-box;
+    background-color: #edf1fd;
+    position: relative;
+    background-image: url("./images/bimg2.jpg");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: right;
+
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    background-color: #f4f7ff;
+    box-shadow: 2px 2px 12px rgba(0, 0,0,0.05);
+    z-index: 1;
+
+}
+.menu{
+    display: flex;
+
+}
+.menu li a{
+    padding: 10px 15px;
+    font-size: 12px;
+    color: #6c707c;
+    
+}
+.lang{
+    color: #292929;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: #292929;
+    
+}
+.menu li a:hover,
+.active{
+    background-color: #292929;
+    color: #FFFFFF !important;
+    font-weight: 700;
+    transition: all ease-in 0.4s ;
+}
+.name{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 500px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-20%,50%);
+}
+.name p:nth-child(1),
+.name .details{
+    color: #6c707c;
+    font-size: 18px;
+
+}
+.name h1{
+    font-size: 40px;
+    margin: 0;
+    letter-spacing: 3px;
+    color: #292929;
+}
+.cv-btn{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    background-color: #292929;
+    color: #FFFFFF;
+}
+.cv-btn
+.cv-btn:hover{
+    background-color: #131313;
+    transform: all ease 0.5s;
+}
+.social{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    display: flex;
+}
+.social a{
+    margin: 6px 12px;
+}
+.social i{
+    color: rgba(18,17,17,0.4);
+    font-size: 14px;
+
+}
+.social a:hover i{
+    color: #17d1ac;
+    transition: all ease 0.5s;
+}
+.arrow{
+    align-self: end;
+    width: 50%;
+    height: 15%;
+    margin-bottom: 4em;
+    position: absolute;
+    bottom: 0px;
+    left: -3%;
+    border-right: 1px solid rgba(41,41,41,0.3);
+}
+.arrow::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 11px 0px 11px;
+    border-color: #292929 transparent transparent transparent;
+    right: -0.7em;
+    bottom: -2px;
+}
+#about{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+}
+.about-text{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 50%;
+
+}
+.about-text{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 50%;
+
+}
+.about-model img{
+    width: 700px;
+}
+.about-text h1{
+    font-size: 5rem;
+    color: #17d1ac;
+
+}
+.about-text h2{
+    font-size: 3rem;
+    color: #FFFFFF;
+    font-weight: 400;
+
+}
+.about-text h1,h2{
+    margin: 0px;
+    padding: 0px;
+}
+.about-text p{
+    font-size: 1.2rem;
+    color: rgba(251,251,251,0.90);
+}
+.about-text button{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #17d1ac;
+}
+.about-text button:hover{
+    background-color: #FFFFFF;
+    transition: all ease 0.3s;
+
+}
+#services{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+
+}
+.s-heading{
+    color: #FFFFFF;
+    font-size: 3rem;
+    margin: 0px;
+    padding: 0px;
+}
+.s-heading p{
+     color: rgba(251,251,251,0.30);
+     font-size: 1rem;
+     margin: 0px;
+     padding: 0px;
+
+}
+.s-heading{
+    text-align: center ;
+    margin: 20px 0px;
+}
+.s-box{
+    background-color: #2b2b2b;
+    width: 350px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1 );
+    position: relative;
+}
+.s-b-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.s-b.img{
+    width: 100%;
+    height: 70%;
+
+}
+.s-b-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+.s-b-text{
+    width: 100%;
+    height: 30%;
+    color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+
+
+
+}
+.s-b-text a{
+    margin-top: 0;
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    display: -webkit-box 80%;
+    max-width: 80%;
+    -webkit-line-clamp:4 ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+
+}
+.s-type{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #FFFFFF;
+    background-color: #151515;
+    padding: 10px 15px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+
+}
+.s-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+
+}
+.s-b-text a:hover{
+    color: rgba(255, 255,255, 0.50);
+
+}
+#portfolio{
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 2% 20px 2%;
+
+}
+.p-heading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    padding: 10px 20px;
+    background-color: #292929;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+}
+.p-box{
+    background-color: #1f1f1f;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 2px 13px rgba(0, 0,0,0.3);
+    position: relative
+    
+}
+.p-b-container{
+    width: 90%;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:10px
+
+}
+.text-overlay{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(23,209,172,0.89);
+    display: none;
+}
+.text-overlay h1,p{
+    color: #FFFFFF;
+
+
+}
+.text-overlay h1{
+    font-size: 2.2rem;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 2px;
+
+}
+.text-overlay p{
+    font-size: 1.2rem;
+    margin: 0px;
+}
+.p-box:hover .text-overlay{
+    display: flex;
+
+}
+.p-box img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+#contact-btn h1{
+    font-size: 2rem;
+    color: #1e1e1e;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 10px;
+    padding: 5px;
+    letter-spacing: 4px;
+    border-bottom: 2px solid #1e1e1e;
+
+}
+#contact-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #f4f7ff;
+    margin: 20px 0px;
+    box-sizing: border-box;
+    box-sizing: 2px 0px 20px rgba(0,0,0,0.4);
+}
+#contact-btn a{
+    color: #FFFFFF;
+    font-size: 1rem;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     width: 150px;
+     height: 40px;
+     margin: 10px;
+     background-color: #1e1e1e;
+     box-shadow: 2px 5px 6px rgba(0,0,0,0.2);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+#contact-btn a:hover{
+    background-color: #17d1ac;
+    color: #000000;
+    transition: all ease 0.5s;
+    font-weight: 700;
+
+}
+#contact-form{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#contact-form form{
+    display: flex;
+    width: 70%;
+    height: 60vh;
+    background-color: #1e1e1e;
+    box-shadow: 2px 12px 20px rgba(0, 0,0,0.02);
+    border: 1px solid rgba(255,255,255,0.01);
+}
+.container-left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contact-right{
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: rgba(255, 255,255, 0.08);
+
+
+}
+.c-l-heading{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #FFFFFF;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-size: 400;
+}
+.f-email,.f-name{
+    display: flex;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.f-email font,
+.f-name font{
+    color: #bfbfbf;
+    font-size: 22px;
+    margin-left: 5px;
+
+}
+.f-email input,
+.f-name input{
+    height: 30px;
+    width: 250px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #929292;
+    color: #FFFFFF;
+    margin: 10px 5px;
+
+
+}
+.f-name input::placeholder,
+.f-name input::placeholder{
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+.f-name input:focus,
+.f-name input:focus{
+    border-bottom: 1px solid #17d1ac;
+    transition: all ease 0.5s;
+
+}
+.message font{
+    font-size: 18px;
+    color: #4e4e4e;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.message{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.contact-right textarea{
+    width: 100% !important;
+    height: 320px !important;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: #ebebeb;
+    font-size: 16px;
+}
+.contact-right textarea::placeholder{
+    color: #ebebeb;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contact-right button{
+    width: 100%;
+    height: 50px;
+    background-color: #1ed98b;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    margin: 0px;
+    color: #1b1b1b;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+@media(max-width:1190px){
+    #main{
+        background-size: 1150px;
+    }
+    .name{
+        left: 10%;
+        top: 50%;
+        transform: translate(-10%,-50%); /*continue from here 28/9*/
+    }
+}
